@@ -1,6 +1,6 @@
 
 **functions.php**
-```
+```php
 /* Add JS for online editor */
 
 function create_demo_url() {
