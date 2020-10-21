@@ -1,5 +1,5 @@
 
-## WP JS inclue
+**functions.php**
 ```
 /* Add JS for online editor */
 
