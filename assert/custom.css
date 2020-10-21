@@ -1,0 +1,90 @@
+
+.CodeMirror {
+    height: 600px;
+    border: 1px solid #a9a6a6;
+    font-size: 15px;
+}
+
+.CodeMirror.zoomon {
+    display: none;
+}
+
+iframe {
+    height: 600px;
+    border: 1px solid #a9a6a6;
+}
+
+iframe.zoomon {
+    width: 100%;
+    border: 1px solid #a9a6a6;
+}
+
+div.menu {
+    height: 60px;
+}
+
+div.menu *{
+    text-decoration: none;
+    margin: 0px;
+}
+
+h1.title {
+    font-size: 20px;
+    line-height: 60px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h1.title a {
+    color: #3498db;
+}
+
+.outer
+{
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
+
+button.menu-item {
+    text-align: center;
+    cursor: pointer;
+    font-size:15px;
+    border-radius: 4px;
+    background-color:#797572;
+    border: none;
+    width: 160px;
+    height: 40px;
+    margin: 10px 0px 10px 0px;
+    transition: all 0.5s;
+}
+
+button.menu-item span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+button.menu-item span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button.menu-item:hover span {
+    padding-right: 25px;
+}
+
+button.menu-item:hover span:after {
+    opacity: 1;
+    right: 0;
+}

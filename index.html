@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <title>LTKK Online Editor v1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://nguyenvanhieu.vn/wp-content/uploads/2020/02/cropped-favicon-3-32x32.png"
+        sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://nguyenvanhieu.vn/wp-content/uploads/2020/02/favicon-16-16.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76"
+        href="https://nguyenvanhieu.vn/wp-content/uploads/2020/02/favicon76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120"
+        href="https://nguyenvanhieu.vn/wp-content/uploads/2020/02/favicon120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+        href="https://nguyenvanhieu.vn/wp-content/uploads/2020/02/favicon152.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+        href="https://nguyenvanhieu.vn/wp-content/uploads/2020/02/favicon114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="https://nguyenvanhieu.vn/wp-content/uploads/2020/02/favicon144.png" />
+    <meta charset="utf-8" />
+    <link rel="canonical" href="https://nguyenvanhieu.vn/editor/" />
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LTKK Online Editor v1.0">
+    <meta property="og:description"
+        content="Công cụ chỉnh sửa & biên dịch HTML/CSS/Javascript online cho người đẹp trai!">
+    <meta property="og:url" content="https://nguyenvanhieu.vn/editor/">
+    <meta property="og:site_name" content="LTKK Online Editor v1.0">
+    <meta property="og:updated_time" content="2020-10-16T11:56:16+07:00">
+    <meta property="fb:app_id" content="1352107988256879">
+    <meta property="og:image" content="https://nguyenvanhieu.vn/wp-content/uploads/2020/10/lap-trinh-khong-kho.jpg">
+    <meta property="og:image:secure_url"
+        content="https://nguyenvanhieu.vn/wp-content/uploads/2020/10/lap-trinh-khong-kho.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="445">
+    <meta property="og:image:alt" content="LTKK Online Editor v1.0">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LTKK Online Editor v1.0">
+    <meta name="twitter:description"
+        content="Công cụ chỉnh sửa & biên dịch HTML/CSS/Javascript online cho người đẹp trai!">
+    <meta name="twitter:site" content="@nguyenvanhieuvn">
+    <meta name="twitter:creator" content="@nguyenvanhieuvn">
+    <meta name="twitter:image" content="https://nguyenvanhieu.vn/wp-content/uploads/2020/10/lap-trinh-khong-kho.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assert/lib/codemirror.css">
+    <script src="./assert/lib/codemirror.js"></script>
+    <script src="./assert/addon/matchbrackets.js"></script>
+    <script src="./assert/addon/closebrackets.js"></script>
+    <script src="./assert/lib/formatting.js"></script>
+    <script src="./assert/addon/closetag.js"></script>
+    <script src="./assert/mode/xml/xml.js"></script>
+    <script src="./assert/mode/javascript/javascript.js"></script>
+    <script src="./assert/mode/css/css.js"></script>
+    <script src="./assert/mode/htmlmixed/htmlmixed.js"></script>
+    <script data-ad-client="ca-pub-5101718850050799" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="./assert/custom.css" />
+</head>
+
+<body style="visibility: hidden;">
+    <div class="querty" style="text-align: center;">
+        <!-- LTKK Editor -->
+        <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px;"
+            data-ad-client="ca-pub-5101718850050799" data-ad-slot="7374196639"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <article class="container-fluid">
+        <div class="menu row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h1 class="title">LTKK Online Editor v1.0</h1>
+            </div>
+            <div class="outer col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="inner hidden-xs hidden-sm">
+                    <button class="menu-item" id="zoom">
+                        <span>Phóng to</span>
+                    </button>
+                </div>
+                <div class="inner">
+                    <button class="menu-item" id="format">
+                        <span>Làm đẹp</span>
+                    </button>
+                </div>
+                <div class="inner">
+                    <button class="menu-item" id="restore">
+                        <span>Khôi phục</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row row-no-gutters">
+            <textarea id="code" name="code">
+                    <!DOCTYPE html>
+                    <html>
+                        <head>
+                            <title>Untitled Document</title>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <style type="text/css">
+                                /* CSS code here */
+                            </style>
+                            <script language="javascript">
+                                // Javascript code here
+                            </script>
+                        </head>
+                        <body>
+                            <!-- HTML content here -->
+                            <p>
+                                Chào mừng bạn đến với <a href="https://nguyenvanhieu.vn">Lập Trình Không Khó</a>
+                            </p>
+                        </body>
+                    </html>
+                </textarea>
+            <iframe id="preview" class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></iframe>
+        </div>
+
+    </article>
+    <script src="./assert/custom.js"></script>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }
+                ,
+                i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        }
+        )(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-121841178-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
